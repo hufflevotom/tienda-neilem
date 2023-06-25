@@ -1,21 +1,24 @@
 const Header = () => {
+  const routes = [
+    { path: "inicio", label: "Inicio" },
+    { path: "nosotros", label: "Nosotros" },
+  ];
   return (
-    <header>
-      <div className="menu logo-nav">
-        <a href="Inicio" className="logo">
-          NEILEM SAC
-        </a>
-        <nav className="navigation">
-          <ul>
-            <li>
-              <a href="nosotros">Nosotros</a>
+    <header className="w-full flex flex-row px-40 justify-between items-center h-20">
+      <a href="Inicio" className="text-2xl text-red-800">
+        NEILEM SAC
+      </a>
+      <nav>
+        <ul className="flex flex-row gap-5 [&>li>a]:text-lg hover:[&>li]:text-red-700">
+          {routes.map((route, index) => (
+            <li key={`nav-${index}`}>
+              <a href={route.path} id={route.path}>
+                {route.label}
+              </a>
             </li>
-            <li>
-              <a href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 };
