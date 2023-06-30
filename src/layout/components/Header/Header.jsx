@@ -1,4 +1,5 @@
-import { PHONE_NUMBER } from "../../../constantes";
+import { Link } from "react-router-dom";
+//import { PHONE_NUMBER } from "../../../constantes";
 
 const Header = () => {
   const routes = [
@@ -20,14 +21,18 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <a
+            {/*<a
               href={`https://api.whatsapp.com/send?phone=51${PHONE_NUMBER}&text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20sus%20servicios.`}
               target="_blank"
               rel="noreferrer"
               className="bg-red-500 px-4 py-2 rounded-md"
             >
               Contáctanos
-            </a>
+          </a> */}
+          <Link to="contactanos" className="bg-red-500 px-4 py-2 rounded-md">
+            Contáctanos 
+            
+          </Link>
           </li>
         </ul>
       </nav>

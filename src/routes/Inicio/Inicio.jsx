@@ -44,9 +44,6 @@ const Inicio = () => {
             informático.
           </p>
         </div>
-        <div className="columna2">
-          <img src="assets/img/index.png" />
-        </div>
       </div>
     </div>
   );
