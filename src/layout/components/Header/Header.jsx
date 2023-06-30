@@ -1,8 +1,10 @@
+import { RUTAS } from "../../../constantes";
+
 const Header = () => {
   const routes = [
-    { path: "inicio", label: "Inicio" },
-    { path: "nosotros", label: "Nosotros" },
-    { path: "contactanos", label: "Contáctanos" },
+    { path: RUTAS.HOME, label: "Inicio" },
+    { path: RUTAS.ABOUT, label: "Nosotros" },
+    { path: RUTAS.CONTACT, label: "Contáctanos" },
   ];
   return (
     <header className="w-full flex flex-row px-40 justify-between items-center h-20 bg-neutral-800">

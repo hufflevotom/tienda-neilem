@@ -1,20 +1,26 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Inicio from "./Inicio/Inicio";
 import Nosotros from "./Nosotros/Nosotros";
 import Contactanos from "./Contactanos/Contactanos";
-import Header from "../layout/components/Header/Header";
-import Footer from "../layout/components/Footer/Footer";
+import { RUTAS } from "../constantes";
 
-export function Router() {
-  return     <BrowserRouter>
-  <Header/>
-  <Routes>
-    <Route path="" element={<Inicio/>}/>
-    <Route path="inicio" element={<Inicio/>}/>
-    <Route path="nosotros" element={<Nosotros/>}/>
-    <Route path="contactanos" element={<Contactanos/>}/>
-  </Routes>
-  <Footer/>
-</BrowserRouter>
+const router = createBrowserRouter([
+  {
+    path: RUTAS.HOME,
+    element: <Inicio />,
+  },
+  {
+    path: RUTAS.ABOUT,
+    element: <Nosotros />,
+  },
+  {
+    path: RUTAS.CONTACT,
+    element: <Contactanos />,
+  },
+]);
 
+function Routes() {
+  return <RouterProvider router={router} />;
 }
+
+export default Routes;
