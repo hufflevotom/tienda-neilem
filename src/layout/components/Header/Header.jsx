@@ -9,16 +9,13 @@ const Header = () => {
   ];
   return (
     <header className="w-full flex flex-row px-40 justify-between items-center h-20 bg-neutral-800">
-      <a href="Inicio" className="text-2xl text-red-600">
-        NEILEM SAC
-      </a>
+      <NavLink to={RUTAS.HOME}>
+        <span className="text-2xl text-red-600">NEILEM SAC</span>
+      </NavLink>
       <nav>
         <ul className="flex flex-row gap-5 [&>li>a]:text-lg text-white hover:[&>li]:text-red-600">
           {routes.map((route, index) => (
             <li key={`nav-${index}`}>
-              {/* <a href={route.path} id={route.path}>
-                {route.label}
-              </a> */}
               <NavLink to={route.path}>{route.label}</NavLink>
             </li>
           ))}
