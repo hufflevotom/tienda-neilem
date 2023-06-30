@@ -1,26 +1,17 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Route, Routes as RRoutes } from "react-router-dom";
 import Inicio from "./Inicio/Inicio";
 import Nosotros from "./Nosotros/Nosotros";
 import Contactanos from "./Contactanos/Contactanos";
 import { RUTAS } from "../constantes";
 
-const router = createBrowserRouter([
-  {
-    path: RUTAS.HOME,
-    element: <Inicio />,
-  },
-  {
-    path: RUTAS.ABOUT,
-    element: <Nosotros />,
-  },
-  {
-    path: RUTAS.CONTACT,
-    element: <Contactanos />,
-  },
-]);
-
 function Routes() {
-  return <RouterProvider router={router} />;
+  return (
+    <RRoutes>
+      <Route path={RUTAS.HOME} element={<Inicio />} />
+      <Route path={RUTAS.ABOUT} element={<Nosotros />} />
+      <Route path={RUTAS.CONTACT} element={<Contactanos />} />
+    </RRoutes>
+  );
 }
 
 export default Routes;

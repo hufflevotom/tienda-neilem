@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { RUTAS } from "../../../constantes";
 
 const Header = () => {
@@ -15,9 +16,10 @@ const Header = () => {
         <ul className="flex flex-row gap-5 [&>li>a]:text-lg text-white hover:[&>li]:text-red-600">
           {routes.map((route, index) => (
             <li key={`nav-${index}`}>
-              <a href={route.path} id={route.path}>
+              {/* <a href={route.path} id={route.path}>
                 {route.label}
-              </a>
+              </a> */}
+              <NavLink to={route.path}>{route.label}</NavLink>
             </li>
           ))}
         </ul>
