@@ -1,0 +1,48 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .controls label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  input[name="slider"] {
+    display: none;
+  }
+  
+  input[name="slider"]:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  
+  #slide-1:checked ~ .controls label:nth-child(1),
+  #slide-2:checked ~ .controls label:nth-child(2),
+  #slide3:checked ~ .controls label:nth-child(3) {
+    background-color: #333;
+  }

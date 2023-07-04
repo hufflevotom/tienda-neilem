@@ -2,9 +2,13 @@ import RapidoImg from "../../assets/images/rapido.png";
 import EconomicoImg from "../../assets/images/Economico.png";
 import EfectivoImg from "../../assets/images/efectivo.png";
 
+import './inicio.css'
+
 const Inicio = () => {
   return (
+    
     <div className="px-40">
+    
       <div className="flex flex-row gap-7 py-8 [&>div]:flex [&>div]:flex-col">
         <div>
           <img src={RapidoImg} className="circulo" />
