@@ -48,6 +48,8 @@ const Inicio = () => {
               / de escritorio y ayuda informática. Especialistas en el ámbito
               informático.
             </p>
+            <br>
+            </br>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Img1 from "../../../assets/images/programa.jpg";
-import Img2 from "../../../assets/images/efectivo.png";
-import Img3 from "../../../assets/images/noimg.png";
+import Img1 from "../../../assets/images/tienda.png";
+import Img2 from "../../../assets/images/tienda1.jpg";
+import Img3 from "../../../assets/images/tienda3.jpg";
 import { useState } from "react";
 const Slider = () => {
   const [currentImg, setCurrentImg] = useState(0);
