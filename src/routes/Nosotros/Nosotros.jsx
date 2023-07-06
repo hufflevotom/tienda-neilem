@@ -5,7 +5,7 @@ const Nosotros = () => {
     <>
       <div className="flex flex-row px-40 py-4">
         <div className="flex flex-col w-3/5">
-          <h2 className="text-xl text-red-600 pb-4">Nosotros</h2>
+          <h2 className="text-xl text-black-600 pb-4">Nosotros</h2>
           <div className="px-8">
             <p>
               NEILEM SAC es una empresa dedicada a brindar soluciones
@@ -22,7 +22,7 @@ const Nosotros = () => {
             </p>
           </div>
           <br />
-          <h2 className="text-xl text-red-600 pb-4">Mision</h2>
+          <h2 className="text-xl text-black-600 pb-4">Mision</h2>
           <p className="px-8">
             Ser una empresa líder soluciones tecnológicas y creadores de
             software a nivel nacional, diferenciándose en nuestros tres pilares:
@@ -30,7 +30,7 @@ const Nosotros = () => {
             responsabilidad hacia nuestra sociedad.
           </p>
           <br />
-          <h2 className="text-xl text-red-600 pb-4">Vision</h2>
+          <h2 className="text-xl text-black-600 pb-4">Vision</h2>
           <p className="px-8">
             Ser la empresa líder en nuestro rubro empresarial diferenciándose de
             cualquier competencia, enfocados en la preparación, el mantenimiento
@@ -44,7 +44,7 @@ const Nosotros = () => {
         </div>
       </div>
 
-      <h2 className="text-xl text-red-600 px-40 py-12 self-center text-center">
+      <h2 className="text-xl text-green-600 px-40 py-12 self-center text-center">
         Proceso
       </h2>
     <br></br>
