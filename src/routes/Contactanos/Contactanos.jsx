@@ -68,7 +68,7 @@ const Contactanos = () => {
         </p>
         <div className="flex flex-col items-center justify-center mb-10">
           <p className="text-center mb-5">
-            Av. Los Ingenieros 298, San Luis, Lima 30
+          Av. Antunez de Mayolo 1251, Santiago de Surco, Lima.
           </p>
           <p className="text-center mb-5">Teléfono: {PHONE_NUMBER}</p>
           <p className="text-center mb-5">

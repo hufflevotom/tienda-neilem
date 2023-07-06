@@ -22,6 +22,8 @@ const Inicio = () => {
           </div>
           <div>
             <img src={EconomicoImg} className="circulo" />
+            <br>
+            </br>
             <h2>Económico</h2>
             <p>
               Diseño profesional a un precio justo, nuestro servicio cuesta

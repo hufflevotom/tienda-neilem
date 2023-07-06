@@ -47,7 +47,8 @@ const Nosotros = () => {
       <h2 className="text-xl text-red-600 px-40 py-12 self-center text-center">
         Proceso
       </h2>
-
+    <br></br>
+    <br></br>
       <div
         id="timeline"
         className="flex flex-row px-40 py-4 justify-center items-center"
@@ -98,6 +99,7 @@ const Nosotros = () => {
             </p>
           </div>
         </div>
+        <br></br>
         <div id="verticalLine" className="absolute w-1 h-[1000px]  bg-gray-400">
           <div
             id="circle"
