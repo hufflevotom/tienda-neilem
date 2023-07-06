@@ -47,6 +47,9 @@ const submitForm = async (event) => {
       const docRef = await FireStore.save("citas", body);
       console.log("Document written with ID: ", docRef.id);
       alert("Cita solicitada con éxito");
+      
+      /*Restablecer los valores del formulario a los predeterminados*/
+      form.reset();
     } else {
       alert(error);
       
