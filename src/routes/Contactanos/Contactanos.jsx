@@ -49,11 +49,13 @@ const submitForm = async (event) => {
       alert("Cita solicitada con éxito");
     } else {
       alert(error);
+      
     }
   } catch (e) {
     console.error("Error adding document: ", e);
     alert("Error al solicitar la cita");
   }
+  
 };
 
 const Contactanos = () => {
