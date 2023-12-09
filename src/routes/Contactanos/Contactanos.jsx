@@ -73,7 +73,7 @@ const Contactanos = () => {
         </p>
         <div className="flex flex-col items-center justify-center mb-10">
           <p className="text-center mb-5">
-          Av. Antunez de Mayolo 1251, Santiago de Surco, Lima.
+          Avenida Mariscal Cáceres Mz 43A Lt 8 - Buenos Aires de Villa ( Inicial -primaria) / Av. Pedro RuizGallo Mz 43 Lt4 - Buenos Aires de Villa( secundaria)
           </p>
           <p className="text-center mb-5">Teléfono: {PHONE_NUMBER}</p>
           <p className="text-center mb-5">
