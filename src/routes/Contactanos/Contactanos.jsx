@@ -28,37 +28,27 @@ const submitForm = async (event) => {
   try {
     event.preventDefault();
     const form = document.getElementById("appointmentForm");
-    const name = form.name.value;
-    const _case = form.case.value;
-    const email = form.email.value;
-    const phone = form.phone.value;
-    const date = form.date.value;
-    const message = form.message.value;
     const body = {
-      name: name,
-      case: _case,
-      email: email,
-      phone: phone,
-      date: date,
-      message: message,
+      name: form.name.value,
+      case: form.case.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      date: form.date.value,
+      message: form.message.value,
     };
     const { isValid, error } = validateForm(body);
     if (isValid) {
       const docRef = await FireStore.save("citas", body);
       console.log("Document written with ID: ", docRef.id);
       alert("Cita solicitada con éxito");
-      
-      /*Restablecer los valores del formulario a los predeterminados*/
       form.reset();
     } else {
       alert(error);
-      
     }
   } catch (e) {
     console.error("Error adding document: ", e);
     alert("Error al solicitar la cita");
   }
-  
 };
 
 const Contactanos = () => {
@@ -77,8 +67,7 @@ const Contactanos = () => {
           </p>
           <p className="text-center mb-5">Teléfono: {PHONE_NUMBER}</p>
           <p className="text-center mb-5">
-            Email:
-            <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+            Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a>
           </p>
         </div>
         <div className="flex flex-col items-center justify-center mb-10">
