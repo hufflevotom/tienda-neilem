@@ -4,4 +4,5 @@ export const RUTAS = {
   HOME: "/",
   ABOUT: "/about",
   CONTACT: "/contact",
+  NIVELES: "/niveles",
 };
