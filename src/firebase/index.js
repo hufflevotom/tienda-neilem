@@ -3,14 +3,14 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 
 const FireStoreApp = () => {
   const firebaseConfig = {
-    apiKey: "AIzaSyAz_byMEyiagQ3bcxKFtvABsdv1IqY5XH0",
-    authDomain: "tiendaneilem.firebaseapp.com",
-    projectId: "tiendaneilem",
-    storageBucket: "tiendaneilem.appspot.com",
-    messagingSenderId: "151754059097",
-    appId: "1:151754059097:web:82f259aac2fa88fcde3048",
-    measurementId: "G-6NQF3319EM",
-  };
+    apiKey: "AIzaSyAMi_P6_CVyB-PVeOR_HI3JlmneGalRLOM",
+    authDomain: "bdreydereyes.firebaseapp.com",
+    projectId: "bdreydereyes",
+    storageBucket: "bdreydereyes.appspot.com",
+    messagingSenderId: "490125519121",
+    appId: "1:490125519121:web:3625a6a0353f28ebbd04b0",
+    measurementId: "G-TY7NJRSTD2"
+  };  
   let app;
   if (!getApps().length) {
     app = initializeApp(firebaseConfig);
