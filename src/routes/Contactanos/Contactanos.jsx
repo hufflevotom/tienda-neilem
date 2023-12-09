@@ -66,8 +66,8 @@ const Contactanos = () => {
           Avenida Mariscal Cáceres Mz 43A Lt 8 - Buenos Aires de Villa ( Inicial -primaria) / Av. Pedro RuizGallo Mz 43 Lt4 - Buenos Aires de Villa( secundaria)
           </p>
           <p className="text-center mb-5">Teléfono: {PHONE_NUMBER}</p>
-          <p className="text-center mb-5">
-            Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+          <p className="text-center mb-5"> 
+            Email: <a href="mailto:abc@gmail.com">institucioneducativareydereyes@gmail.com</a>
           </p>
         </div>
         <div className="flex flex-col items-center justify-center mb-10">
@@ -126,9 +126,9 @@ const Contactanos = () => {
 
           <label string="case">Asunto:</label>
           <select id="case" name="case" required>
-            <option value="iniciar un proyecto">Iniciar un proyecto</option>
-            <option value="creacion de software">Creacion de software</option>
-            <option value="mantenimiento">Mantenimiento</option>
+            <option value="iniciar un proyecto">Matricula</option>
+            <option value="creacion de software">Asistencias</option>
+            <option value="mantenimiento">Notas</option>
             <option value="otros">Otros</option>
           </select>
 
@@ -138,7 +138,7 @@ const Contactanos = () => {
           <label string="phone">Teléfono:</label>
           <input type="text" id="phone" name="phone" required />
 
-          <label string="date">Fecha de la cita:</label>
+          <label string="date">Fecha de reunion:</label>
           <input type="date" id="date" name="date" required />
 
           <label string="message">Mensaje adicional:</label>
@@ -160,7 +160,7 @@ const Contactanos = () => {
             <i className="fa-brands fa-whatsapp" /> WhatsApp
           </a>
           <a
-            href={`https://www.google.com.pe/maps/place/Jir%C3%B3n+Santiago+Ant%C3%BAnez+de+Mayolo+1251,+Santiago+de+Surco+15039/@-12.1383121,-76.9963235,17z/data=!3m1!4b1!4m6!3m5!1s0x9105b80e72b5161f:0xb92a2a975ea425f6!8m2!3d-12.1383174!4d-76.9937486!16s%2Fg%2F11tg0_mw7_?hl=es&entry=ttu`}
+            href={`https://www.google.com/maps/place/I.E.P+Rey+de+Reyes/@-12.1886918,-76.9989859,3a,75y/data=!3m8!1e2!3m6!1sAF1QipNpjj7FeLfv-A3EIDV4opoxTKmrIgY3SMK8tRuZ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNpjj7FeLfv-A3EIDV4opoxTKmrIgY3SMK8tRuZ%3Dw114-h86-k-no!7i4032!8i3024!4m7!3m6!1s0x9105b9db3493de91:0xc87ec070301e11d5!8m2!3d-12.1886584!4d-76.9990306!10e5!16s%2Fg%2F11c58s02bs?authuser=0&entry=ttu`}
             target="_blank"
             rel="noreferrer"
             className="bg-blue-500 px-4 py-2 rounded-md text-white"
