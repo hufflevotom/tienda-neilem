@@ -4,6 +4,7 @@ import { RUTAS } from "../../../constantes";
 const Header = () => {
   const routes = [
     { path: RUTAS.HOME, label: "Inicio" },
+    { path: RUTAS.NIVELES, label: "Niveles" },
     { path: RUTAS.ABOUT, label: "Nosotros" },
     { path: RUTAS.CONTACT, label: "Contáctanos" },
   ];
