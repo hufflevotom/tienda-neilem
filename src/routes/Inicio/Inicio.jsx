@@ -13,31 +13,38 @@ const Inicio = () => {
         <div className="flex flex-row gap-7 py-8 [&>div]:flex [&>div]:flex-col">
           <div>
             <img src={RapidoImg} className="circulo" />
-            <h2>Rápido</h2>
+            <h2>Excelencia académica</h2>
             <p>
-              Nuestra experiencia nos permite terminar proyectos en tiempo
-              récord, sin que ello implique tener una menor calidad, tu página
-              web puede estar funcionando en menos de 1 semana.
+            Buscamos que nuestros alumnos se integren y aporten a la sociedad actual compleja, 
+            cambiante y que presenta múltiples desafíos a nivel global por ello nuestro enfoque 
+            académico está centrado en el desarrollo de habilidades que contribuyen al logro de 
+            una sólida formación académica.Promovemos la creatividad, el aprendizaje de los idiomas, 
+            el uso de la tecnología como herramientas en el proceso de enseñanza y de aprendizaje. 
+            Además, dentro de esta formación académica las experiencias de viajes internacionales 
+            en el ámbito académico, cultural, tecnológico y de idiomas permiten a los alumnos abrir 
+            su mente y conocer otras culturas.
             </p>
           </div>
           <div>
             <img src={EconomicoImg} className="circulo" />
             <br>
             </br>
-            <h2>Económico</h2>
+            <h2>Programas Académicos</h2>
             <p>
-              Diseño profesional a un precio justo, nuestro servicio cuesta
-              hasta 3 veces menos que en otras empresas manteniendo altos
-              estándares de calidad y creatividad.
+            Nuestros programas académicos están diseñados para desafiar a los estudiantes 
+            intelectualmente mientras integran principios bíblicos en cada materia. 
+            Creemos que la educación es un viaje continuo, y nuestro dedicado equipo de profesionales 
+            está aquí para guiar a los estudiantes en cada paso.
             </p>
           </div>
           <div>
             <img src={EfectivoImg} className="circulo" />
-            <h2>Efectivo</h2>
+            <h2>Únete a Nuestra Comunidad:</h2>
             <p>
-              Más de 20 años de experiencia en el campo de diseño gráfico y 10
-              años en el de diseño web es tiempo suficiente como para asegurarte
-              un servicio profesional y de alta calidad.
+            Rey de reyes es más que una institución educativa; somos una comunidad 
+            que se apoya mutuamente en el crecimiento académico y espiritual. 
+            Únete a nosotros en este viaje emocionante hacia la excelencia educativa 
+            y la formación integral de nuestros estudiantes.
             </p>
           </div>
         </div>
